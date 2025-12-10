@@ -1,0 +1,17 @@
+{
+  "name": "essentials-marketplace",
+  "owner": {
+    "name": "joba"
+  },
+  "metadata": {
+    "description": "Essential commands and agents for systematic software development"
+  },
+  "plugins": [
+    {
+      "name": "essentials",
+      "source": "./plugins/essentials",
+      "description": "Essential commands and agents for software development",
+      "version": "1.0.0"
+    }
+  ]
+}

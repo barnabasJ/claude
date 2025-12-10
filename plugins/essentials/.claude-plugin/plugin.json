@@ -1,0 +1,25 @@
+{
+  "name": "essentials",
+  "description": "Essential commands and agents for software development",
+  "version": "1.0.0",
+  "author": {
+    "name": "joba"
+  },
+  "license": "MIT",
+  "keywords": ["workflow", "development", "testing", "review"],
+  "commands": "./commands/",
+  "agents": [
+    "./agents/research-agent.md",
+    "./agents/architecture-agent.md",
+    "./agents/feature-planner.md",
+    "./agents/qa-reviewer.md",
+    "./agents/security-reviewer.md",
+    "./agents/code-quality-reviewer.md",
+    "./agents/consistency-reviewer.md",
+    "./agents/factual-reviewer.md",
+    "./agents/redundancy-reviewer.md",
+    "./agents/documentation-expert.md",
+    "./agents/documentation-reviewer.md",
+    "./agents/senior-engineer-reviewer.md"
+  ]
+}
