@@ -1,6 +1,5 @@
 ---
-description:
-  Task decomposition with TDD - creates numbered checklists from plans
+description: Task decomposition with TDD - creates numbered checklists from plans
 argument-hint: [feature-name]
 ---
 
@@ -83,10 +82,12 @@ X. [ ] **Task Name**
 
 Prerequisites: [if any]
 
-X.1. [ ] Substep with file reference - File: `path/to/file.ex:line-numbers` - 📖
-[Documentation](url) X.2. [ ] Write failing test - File: `test/path/to/test.exs`
-X.3. [ ] Implement feature X.4. [ ] Run tests: `mix test path/to/test` X.5. [ ]
-Verify all tests pass
+X.1. [ ] Substep with file reference - File: `path/to/file.ex:line-numbers` -
+📖 [Documentation](url)
+X.2. [ ] Write failing test - File: `test/path/to/test.exs`
+X.3. [ ] Implement feature
+X.4. [ ] Run tests: `mix test path/to/test`
+X.5. [ ] Verify all tests pass
 
 📝 Commit: `type(scope): description`
 ```
@@ -220,13 +221,13 @@ Document in `./notes/knowledge/`:
 
 1. [ ] **Add User Resource with Auth Attributes**
 
-   1.1. [ ] Create user resource - File: `lib/app/accounts/user.ex` - Follow
-   pattern: `lib/app/accounts/organization.ex:15-40` - 📖
-   [Ash Resource Guide](https://hexdocs.pm/ash/resources.html) 1.2. [ ] Write
-   user creation test - File: `test/app/accounts/user_test.exs` 1.3. [ ] Add
-   email and password attributes 1.4. [ ] Add email validation 1.5. [ ] Run
-   tests: `mix test test/app/accounts/user_test.exs` 1.6. [ ] Verify all tests
-   pass
+   1.1. [ ] Create user resource - File: `lib/app/accounts/user.ex` 
+    - Follow pattern: `lib/app/accounts/organization.ex:15-40` - 📖 [Ash Resource Guide](https://hexdocs.pm/ash/resources.html) 
+   1.2. [ ] Write user creation test - File: `test/app/accounts/user_test.exs` 
+   1.3. [ ] Add email and password attributes 
+   1.4. [ ] Add email validation 
+   1.5. [ ] Run tests: `mix test test/app/accounts/user_test.exs` 
+   1.6. [ ] Verify all tests pass
 
    📝 Commit: `feat(accounts): add user resource with auth attributes`
 
@@ -237,12 +238,12 @@ Document in `./notes/knowledge/`:
    Prerequisites: Task 1 complete
 
    2.1. [ ] Add ueberauth dependencies to mix.exs - 📖
-   [Ueberauth Docs](https://hexdocs.pm/ueberauth) 2.2. [ ] Write OAuth callback
-   test 2.3. [ ] Create OAuth controller - File:
-   `lib/app_web/controllers/auth_controller.ex` 2.4. [ ] Configure providers in
-   config/ 2.5. [ ] Run tests:
-   `mix test test/app_web/controllers/auth_controller_test.exs` 2.6. [ ] Verify
-   all tests pass
+   [Ueberauth Docs](https://hexdocs.pm/ueberauth) 
+   2.2. [ ] Write OAuth callback test 
+   2.3. [ ] Create OAuth controller - File: `lib/app_web/controllers/auth_controller.ex` 
+   2.4. [ ] Configure providers in config/ 
+   2.5. [ ] Run tests: `mix test test/app_web/controllers/auth_controller_test.exs` 
+   2.6. [ ] Verify all tests pass
 
    📝 Commit: `feat(auth): configure OAuth providers`
 ```
