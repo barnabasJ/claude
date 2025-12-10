@@ -1,23 +1,25 @@
-# Essentials Plugin
+# Essentials Marketplace
 
 Commands and agents for systematic software development with Claude Code.
 
 ## Installation
 
-Add this repository as a plugin marketplace, then install:
-
 ```bash
-# Add the marketplace (one-time setup)
-/plugin marketplace add /path/to/this/directory
+# Add this marketplace (one-time setup)
+claude plugin marketplace add https://github.com/barnabasj/claude
 
 # Install the plugin
-/plugin install essentials@local
+claude plugin install essentials
 ```
 
-Or install directly if you have a marketplace configured:
+For local development:
 
 ```bash
-/plugin install essentials
+# Add from local path
+claude plugin marketplace add /path/to/this/repo
+
+# Install
+claude plugin install essentials
 ```
 
 ## Commands
@@ -56,17 +58,21 @@ Specialized agents available via the Task tool:
 
 ## Documentation
 
-- [Getting Started](docs/getting-started.md)
-- [Workflow Overview](docs/workflow-overview.md)
-- [Customization Guide](docs/customization-guide.md)
+- [Getting Started](plugins/essentials/docs/getting-started.md)
+- [Workflow Overview](plugins/essentials/docs/workflow-overview.md)
+- [Customization Guide](plugins/essentials/docs/customization-guide.md)
 
 ## Structure
 
 ```
-essentials/
+.
 ├── .claude-plugin/
-│   └── plugin.json      # Plugin manifest
-├── commands/            # Slash commands
-├── agents/              # Specialized agents
-└── docs/                # Documentation
+│   └── marketplace.json    # Marketplace manifest
+└── plugins/
+    └── essentials/
+        ├── .claude-plugin/
+        │   └── plugin.json # Plugin manifest
+        ├── commands/       # Slash commands
+        ├── agents/         # Specialized agents
+        └── docs/           # Documentation
 ```
